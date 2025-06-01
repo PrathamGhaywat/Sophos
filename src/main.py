@@ -39,3 +39,13 @@ if prompt := st.chat_input("Ask me anything..."):
 
     # Save response to session
     st.session_state.messages.append({"role": "assistant", "content": response})
+
+st.markdown(
+    """
+    <hr style="margin-top: 50px;">
+    <div style="text-align: center; color: gray;">
+        <small>Built by Pratham Ghaywat: https://github.com/prathamghaywat</small>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
